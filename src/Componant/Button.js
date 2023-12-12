@@ -8,7 +8,7 @@ function Button(props) {
 
   return (
     <div className='flex justify-center mt-10'>
-        <button className={buttonclass} onClick={props.onClick}>{props.label}</button>
+        <button className={buttonclass} onClick={props.onClick} to={props.path} components={props.components}>{props.label}</button>
     </div>
   )
 }

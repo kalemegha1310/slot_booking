@@ -5,7 +5,9 @@ import Button from '../Button';
 
 
 
+
 function HomePage() {
+  
 
   function imageClick() {
     <HomePage></HomePage>
@@ -18,7 +20,7 @@ function HomePage() {
        <img style={{paddingLeft:"85%", height:'80%', paddingTop:'14px'}} src={ball} alt='ball' onClick={() => imageClick()}></img>
        </header>
         <SportsCards></SportsCards>
-        <Button label="Check your Booking">
+        <Button label="Check your Booking" >
 
         </Button>
       
