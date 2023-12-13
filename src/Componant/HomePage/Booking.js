@@ -17,8 +17,9 @@ function Booking() {
   function onChange(calDate) {
     // change results based on calendar date click
     setCalDate(calDate);
+    console.log("Date:0", calDate);
   }
-
+  const todays = new Date();
   return (
     <div>
       <Header></Header>
@@ -29,7 +30,9 @@ function Booking() {
           minDate={new Date()} // Set minimum date to today
           maxDate={addDays(new Date(), 20)}
         ></Calendar>
-        <p className="pt-32">Slot not available</p>
+        <p className="pt-32">
+          Booking has been closed. Book your slot for tommrrow's date
+        </p>
       </div>
       <Button label="Back" onClick={handleBack} book={btnCss}></Button>
     </div>
